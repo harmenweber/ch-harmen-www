@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Style Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <!--    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />-->
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css">
+</head>
+
+<body class="page-layout nord-light">
+<div class="page-header">
+    <div class="logo">
+        <a href="/">
+            <i class="fa-solid fa-terminal fa-xl fa-fw"></i> harmen.ch
+        </a>
+    </div>
+    <div class="menu">
+        <a href="./projects.html">Projects</a>
+        <a href="./about.html">About</a>
+    </div>
+</div>
+<div class="page-content">
+    <p>
+        Below are some sections on different levels.
+        Just to see what these different levels will look like.
+    </p>
+    <h1>Sections</h1>
+    <p>
+        This is a first level section.
+    </p>
+    <h2>Level 2</h2>
+    <p>
+        This is a second level section.
+    </p>
+    <h3>Level 3</h3>
+    <p>
+        This is a third level section.
+    </p>
+    <h4>Level 4</h4>
+    <p>
+        This is a fourth level section.
+    </p>
+    <h5>Level 5</h5>
+    <p>
+        This is a fifth level section.
+    </p>
+    
+    <h1>Paragraphs</h1>
+    <p>
+        Below are some paragraphs to see how they multiple paragraphs in a row behave.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+        
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+        eos qui ratione voluptatem sequi nesciunt.
+        
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+        numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+        commodi consequatur?
+        
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+        qui dolorem eum fugiat quo voluptas nulla pariatur?
+    </p>
+    <p>
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+        corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+        culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+    </p>
+    
+    <h1>Text Formatting</h1>
+    <p>
+        Here is a paragraph with that contains texts with different formatting.
+        Here is some emphasized text: <em>Halleluja!</em>
+        And here is some strong text: <strong>Yaba daba dooo!</strong>
+        Of course, there are also code blocks like this one: <code>echo "Hello World!"</code>
+    </p>
+    <p>
+        Something I didn't know existed, is marked text.
+        Text can be marked using the <code>&lt;mark/&gt;</code> element:
+        <mark>This is marked text!</mark>
+        Note, that the mark element does not seem to be part of XHTML.
+        However, common browser seem to support anyway.
+    </p>
+    
+    <h1>Lists</h1>
+    <p>
+        This sections covers the different types of lists.
+    </p>
+    <h2>Unordered List</h2>
+    <p>
+        Here is an unordered list:
+    </p>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <p>
+        Here is an ordered list:
+    </p>
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+    <h2>Definition List</h2>
+    <p>
+        Here is a definition list:
+    </p>
+    <dl>
+        <dt>Unordered List</dt>
+        <dd>
+            In an unordered list, the order of the list items is irrelevant.
+        </dd>
+        <dt>Ordered List</dt>
+        <dd>
+            In an ordered list, the order of the list items is relevant.
+        </dd>
+        <dt>Definition List</dt>
+        <dd>
+            In a definition list, every list item has a term and a definition.
+        </dd>
+    </dl>
+    <p>
+        I like to have term and definition on the same horizontal height if the terms are relatively short and have
+        about the same length.
+        
+        To realize that, I created the class <code>horizontal</code> that I can place on the <code>&lt;dl/&gt;</code>
+        element.
+    </p>
+    <dl class="horizontal">
+        <dt>Unordered List</dt>
+        <dd>
+            In an unordered list, the order of the list items is irrelevant.
+        </dd>
+        <dt>Ordered List</dt>
+        <dd>
+            In an ordered list, the order of the list items is relevant.
+        </dd>
+        <dt>Definition List</dt>
+        <dd>
+            In a definition list, every list item has a term and a definition.
+        </dd>
+    </dl>
+    
+    <h1>Links</h1>
+    <p>
+        Here is a link to the <a href="#">top of the page</a>.
+    </p>
+    
+    <h1>Admonitions</h1>
+    <p>
+        We can create <code>&lt;div/&gt;</code> elements with class <code>admonition</code> to create shiny looking
+        admonitions like the following one:
+    </p>
+    <div class="admonition">
+        <div class="icon">
+            <i class="fa-solid fa-pencil-alt fa-fw fa-xl"></i>
+        </div>
+        <div class="content">
+            <p>
+                This is an admonition.
+                By default, an admonition has a neutral color and can be used for notes.
+                Hence, the note icon to the left.
+            </p>
+            <p>
+                A panel can hold complex contents.
+                After all, it is a <code>&lt;div/&gt;</code>.
+            </p>
+        </div>
+    </div>
+    <p>
+        By default, an admonition has a neutral color and can be used for notes.
+        However, one can pass additional classes that will change the color of the admonition.
+        The following options are available: <code>tip</code>, <code>warning</code>, <code>important</code> and <code>caution</code>.
+        Below are the examples.
+    </p>
+    <div class="admonition tip">
+        <div class="icon">
+            <i class="fa-solid fa-thumbs-up fa-fw fa-xl"></i>
+        </div>
+        <div class="content">
+            <p>
+                This is a tip.
+            </p>
+        </div>
+    </div>
+    <div class="admonition warning">
+        <div class="icon">
+            <i class="fa-solid fa-skull-crossbones fa-fw fa-xl"></i>
+        </div>
+        <div class="content">
+            <p>
+                This is a warning.
+            </p>
+        </div>
+    </div>
+    <div class="admonition important">
+        <div class="icon">
+            <i class="fa-solid fa-highlighter fa-fw fa-xl"></i>
+        </div>
+        <div class="content">
+            <p>
+                This is important.
+            </p>
+        </div>
+    </div>
+    <div class="admonition caution">
+        <div class="icon">
+            <i class="fa-solid fa-exclamation-triangle fa-fw fa-xl"></i>
+        </div>
+        <div class="content">
+            <p>
+                Here, you better be cautious.
+            </p>
+        </div>
+    </div>
+    
+    <h1>Quotations, Citations, and Blockquotes</h1>
+    <p>
+        There are three major HTML elements involved in quotations:
+        <code>&lt;q/&gt;</code>
+        <code>&lt;cite/&gt;</code>,
+        and <code>&lt;blockquote/&gt;</code>.
+    </p>
+    <h2>Quotations</h2>
+    <p>
+        <code>&lt;q/&gt;</code> elements are for inline quotes.
+        Here is a quote: <q>I could hand out cupcakes to keep them interested</q>.
+    </p>
+    <h2>Citations</h2>
+    <p>
+        The <code>&lt;cite/&gt;</code> element should be used for referencing creative work rather than the person who
+        said or wrote the quote.
+        
+        In other words, it’s not for quotes. Here are the examples from the spec:
+        The author of <cite>Quoting in HTML: Quotations, Citations, and Blockquotes</cite> makes promises about baked
+        goods that he can't keep.
+    </p>
+    <h2>Blockquotes</h2>
+    <p>
+        Blockquote tags are used for distinguishing quoted text from the rest of the content.
+        Quotes of four lines or longer should be set apart this way.
+        Here is an example:
+    </p>
+    <blockquote>
+        How can I keep the audience engaged with this article on quotations?
+        Grammar and a charming personality will only go so far.
+    </blockquote>
+    <p>
+        A blockquote can hold further HTML elements.
+        To please the eye, we could wrap the blockquote into a panel div that contains the blockquote and the person who
+        said or wrote the quote.
+        Here is an example:
+    </p>
+    <div class="blockquote">
+        <div class="quote">
+            Everybody remember where we parked.
+        </div>
+        <div class="author">
+            Captain James T. Kirk<br/>
+            Star Trek IV: The Voyage Home
+        </div>
+    </div>
+    
+    <h1>Code</h1>
+    <p>
+        We can add code blocks into our documents.
+        Below is a code block with javascript syntax highlighting.
+    </p>
+    <pre><code class="language-javascript">
+function greet(name) {
+    console.log('Hello ' + name + '!');
+}
+    </code></pre>
+</div>
+<div class="page-footer">
+    <span>footer</span>
+</div>
+</body>
+
+<script src="https://kit.fontawesome.com/81313a52af.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        crossorigin="anonymous"></script>
+<script>hljs.highlightAll();</script>
+
+</html>
